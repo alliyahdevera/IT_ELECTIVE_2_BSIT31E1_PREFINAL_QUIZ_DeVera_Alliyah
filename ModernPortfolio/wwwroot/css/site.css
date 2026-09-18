@@ -1,55 +1,44 @@
 html {
-  font-size: 14px;
-}
-
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
-
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
-}
-
-html {
-  position: relative;
-  min-height: 100%;
+    background: linear-gradient(135deg, #0d1117 0%, #1a1030 50%, #0d1117 100%);
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 body {
-  margin-bottom: 60px;
+    background: transparent;
 }
 
-.form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
-  color: var(--bs-secondary-color);
-  text-align: end;
+html, body {
+    height: 100%;
 }
 
-.form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
-  text-align: start;
-}
-
-html {
+body {
+    color: #e6e6e6;
+    display: flex;
+    flex-direction: column;
     font-size: 14px;
 }
 
 @media (min-width: 768px) {
-    html {
+    body {
         font-size: 16px;
     }
 }
 
-body {
-    background: linear-gradient(135deg, #0d1117 0%, #1a1030 50%, #0d1117 100%);
-    min-height: 100vh;
-    color: #e6e6e6;
-}
-
 .page-container {
+    flex: 1 0 auto;
     max-width: 1140px;
     margin: 0 auto;
     padding: 120px 20px 60px;
+    width: 100%;
+}
+
+.site-footer {
+    flex-shrink: 0;
+    text-align: center;
+    padding: 24px 20px;
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 0.85rem;
 }
 
 .navbar-pill {
@@ -100,7 +89,7 @@ body {
     }
 
 .hero {
-    min-height: 100vh;
+    flex: 1 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -176,10 +165,6 @@ body {
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-    .glass-card:hover {
-        transform: translateY(-4px);
-        box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5);
-    }
 
     .glass-card .card-img-top {
         height: 160px;
@@ -219,6 +204,7 @@ body {
     }
 
 .login-wrapper {
+    flex: 1 0 auto;
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -231,6 +217,7 @@ body {
     max-width: 400px;
     padding: 40px;
 }
+
 
     .login-card .form-control {
         background: rgba(255, 255, 255, 0.05);
