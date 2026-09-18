@@ -1,0 +1,33 @@
+﻿@model ModernPortfolio.Models.Project
+@{
+    ViewData["Title"] = Model.Title;
+}
+
+<div class="page-container">
+    <a asp-action="Index" class="text-white-50">&larr; Back to Table of Contents</a>
+    <h2 class="text-white mt-3">@Model.Title</h2>
+    <img src="@Model.ThumbnailUrl" class="img-fluid mb-3 rounded" style="max-width:400px" />
+    <p class="text-white-50">@Model.Description</p>
+    <p><a href="@Model.GithubUrl" target="_blank">View on GitHub</a></p>
+
+    <hr class="border-secondary" />
+    <h4 class="text-white">Comments</h4>
+    <form asp-action="AddComment" asp-controller="Projects" method="post" class="mb-4">
+        <input type="hidden" name="projectId" value="@Model.Id" />
+        <div class="mb-2">
+            <input name="author" class="form-control" placeholder="Your name" />
+        </div>
+        <div class="mb-2">
+            <textarea name="text" class="form-control" placeholder="Write a comment..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-glass">Post Comment</button>
+    </form>
+
+    @foreach (var c in (List<ModernPortfolio.Models.Comment>)ViewBag.Comments)
+    {
+        <div class="glass-card p-3 mb-2">
+            <strong class="text-white">@c.Author</strong> <small class="text-white-50">@c.CreatedAt.ToString("g")</small>
+            <p class="mb-0 text-white-50">@c.Text</p>
+        </div>
+    }
+</div>
