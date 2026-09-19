@@ -79,7 +79,7 @@
                 Title = "Playlistify",
                 BriefDescription = "A session-based playlist manager where users log in and build shareable YouTube playlists with per-track notes.",
                 Description = "Playlistify is an ASP.NET Core MVC application that lets logged-in users create playlists made up of YouTube video links, each with an optional note. Playlists support dynamically adding or removing video rows (handled server-side, no JavaScript required) before saving. All saved playlists are listed on the dashboard along with their creator and track list, with each video link opening directly on YouTube.",
-                GithubUrl = "https://github.com/alliyahdevera/IT_ELECTIVE_2_MIDTERM_Q2",
+                GithubUrl = "https://github.com/alliyahdevera/IT_ELECTIVE_2_MIDTERM_Q2_DEVERA_ALLIYAH",
                 ThumbnailUrl = "/photos/Playlistify.png"
             },
             new Project
