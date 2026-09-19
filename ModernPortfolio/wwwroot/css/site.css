@@ -189,6 +189,23 @@ body {
         justify-content: flex-end;
     }
 
+.btn-glass-outline {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    color: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    padding: 6px 18px;
+    font-size: 0.85rem;
+    margin-right: 8px;
+}
+
+    .btn-glass-outline:hover {
+        background: rgba(255, 255, 255, 0.08);
+        color: #fff;
+    }
 .btn-glass {
     background: rgba(255, 255, 255, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.2);
