@@ -10,7 +10,7 @@ table of contents, detail pages, a comment section, and a hardcoded login system
 
 | Field    | Value              |
 |----------|--------------------|
-| Email    | admin@gmail.com    |
+| Email    | ally@gmail.com    |
 | Password | Password123!       |
 
 ## Features
