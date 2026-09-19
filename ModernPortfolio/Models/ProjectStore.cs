@@ -62,6 +62,34 @@
                 Description = "Dream Bake POS is an ASP.NET Core MVC Point of Sale application designed for a bakery. It allows cashiers to browse bakery products, add items to a cart, enter customer information, calculate orders, and complete transactions. The project uses in-memory repositories and a bakery-inspired brown and cream interface.",
                 GithubUrl = "https://github.com/alliyahdevera/IT_ELECTIVE_2_MIDTERM_H1_H2_H3_DEVERA_ALLIYAH",
                 ThumbnailUrl = "/photos/pos.png"
+            },
+
+            new Project
+            {
+                Id = 7,
+                Title = "MusicSpace",
+                BriefDescription = "A music playlist web app where users build their own playlists from YouTube songs and play them directly in-browser.",
+                Description = "MusicSpace is an ASP.NET Core MVC web application that lets users log in, build a personal playlist by adding YouTube songs, and play them using an embedded YouTube player. It also tracks a Top 5 Trending Songs list based on total play counts across all users. Users can remove individual songs, clear their whole playlist, and view their profile — all through a responsive, Bootstrap-styled interface.",
+                GithubUrl = "https://github.com/alliyahdevera/IT_ELECTIVE_2_MIDTERM_Q1",
+                ThumbnailUrl = "/photos/music.png"
+            },
+            new Project
+            {
+                Id = 8,
+                Title = "Playlistify",
+                BriefDescription = "A session-based playlist manager where users log in and build shareable YouTube playlists with per-track notes.",
+                Description = "Playlistify is an ASP.NET Core MVC application that lets logged-in users create playlists made up of YouTube video links, each with an optional note. Playlists support dynamically adding or removing video rows (handled server-side, no JavaScript required) before saving. All saved playlists are listed on the dashboard along with their creator and track list, with each video link opening directly on YouTube.",
+                GithubUrl = "https://github.com/alliyahdevera/IT_ELECTIVE_2_MIDTERM_Q2",
+                ThumbnailUrl = "/photos/Playlistify.png"
+            },
+            new Project
+            {
+                Id = 9,
+                Title = "Student Information System",
+                BriefDescription = "An ASP.NET Core MVC app using full Identity authentication with EF Core Code-First models for students, courses, and subjects.",
+                Description = "This project sets up ASP.NET Core Identity for real user registration, login, and account management (as opposed to a hardcoded login), backed by Entity Framework Core with Code-First migrations. The data models cover a student information system — Students (with course and year level), Courses, and Subjects — laying the groundwork for a full academic records system.",
+                GithubUrl = "https://github.com/alliyahdevera/IT_ELECTIVE_2_PREFINAL_ACTIVITY_1",
+                ThumbnailUrl = "/photos/studentinfosystem.png"
             }
         };
 
